@@ -1,4 +1,4 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
-require("config.lazy")
+vim.g.python3_host_prog = "~/.virtualenvs/Pyenvmain/bin/python"
 
-vim.g.python3_host_prog = "~/.myenv/bin/python"
+require("config.lazy")

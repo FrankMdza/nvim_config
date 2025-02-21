@@ -21,6 +21,8 @@ return {
         capabilities = capabilities, -- Ensure LSP completion works
         settings = {
           python = {
+            venvPath = "~/.virtualenvs",
+            venv = "Pyenvmain",
             analysis = {
               typeCheckingMode = "strict",
             },

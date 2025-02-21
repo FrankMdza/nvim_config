@@ -13,11 +13,14 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 vim.opt.rtp:prepend(lazypath)
+vim.g.python3_host_prog = "~/.virtualenvs/Pyenvmain/bin/python"
 
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
+
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    { import = "lazyvim.plugins.extras.ui.mini-animate" },
     -- import/override with your plugins
     { import = "plugins" },
 
